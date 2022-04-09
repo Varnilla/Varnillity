@@ -3,3 +3,4 @@ tellraw @a {"text": "Datapack has been (re)loaded!", "color": "green"}
 
 # Register scoreboards
 scoreboard objectives add isStriderNearby dummy
+scoreboard objectives add bedrockBreakerTimer dummy

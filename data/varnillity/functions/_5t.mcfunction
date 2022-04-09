@@ -7,5 +7,8 @@ execute as @e[type=strider,nbt={OnGround:1b}] at @s store result score @s isStri
 execute as @e[scores={isStriderNearby=1..},nbt=!{NoAI:1b}] run data merge entity @s {NoAI:1b}
 execute as @e[scores={isStriderNearby=0},nbt={NoAI:1b}] run data merge entity @s {NoAI:0b}
 
+# Bedrock breaker
+execute as @e[type=item,nbt={Item:{id:"minecraft:dirt"},OnGround:1b}] at @s if block ~ ~-1 ~ bedrock run function varnillity:child/bb
+
 # Callback
 schedule function varnillity:_5t 5t

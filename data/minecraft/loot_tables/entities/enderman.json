@@ -1,48 +1,42 @@
 {
     "type": "minecraft:entity",
-    "pools": [
-        {
+    "pools": [{
             "rolls": 1,
             "bonus_rolls": 0,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 0,
-                                "max": 1
-                            },
-                            "add": false
+            "entries": [{
+                "type": "minecraft:item",
+                "functions": [{
+                        "function": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 0,
+                            "max": 1
                         },
-                        {
-                            "function": "minecraft:looting_enchant",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 0,
-                                "max": 1
-                            }
+                        "add": false
+                    },
+                    {
+                        "function": "minecraft:looting_enchant",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 0,
+                            "max": 1
                         }
-                    ],
-                    "name": "minecraft:ender_pearl"
-                }
-            ]
+                    }
+                ],
+                "name": "minecraft:ender_pearl"
+            }]
         },
         {
             "rolls": 1,
             "bonus_rolls": 0,
-            "entries": [
-                {
+            "entries": [{
                     "type": "empty",
                     "weight": 40
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "functions": [
-                        {
+                    "functions": [{
                             "function": "minecraft:set_count",
                             "count": {
                                 "type": "minecraft:uniform",
@@ -62,11 +56,9 @@
                     "name": "minecraft:command_block"
                 }
             ],
-            "conditions": [
-                {
-                    "condition": "killed_by_player"
-                }
-            ]
+            "conditions": [{
+                "condition": "killed_by_player"
+            }]
         }
     ]
 }
